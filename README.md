@@ -43,18 +43,18 @@
 ## 文件结构
 
 .
-├── auto_start.sh    //自启动脚本
-├── CMakeLists.txt
-├── README.md
-└── src
-    ├── armor_detector                 // 自瞄
-    │   ├── CMakeLists.txt
-    │   ├── include
-    │   │   ├── ArmorFinder.h
-    │   │   ├── DetectAccelerator.h
-    │   │   ├── Detector.h
-    │   │   ├── EnemyType.h
-    │   │   ├── LightBarFinder.h
+├── auto_start.sh    //自启动脚本    \\
+├── CMakeLists.txt                  \\
+├── README.md                       \\
+└── src                              \\
+    ├── armor_detector                 // 自瞄   \\
+    │   ├── CMakeLists.txt                       \\
+    │   ├── include                              \\
+    │   │   ├── ArmorFinder.h                    \\
+    │   │   ├── DetectAccelerator.h               \\
+    │   │   ├── Detector.h                        \\
+    │   │   ├── EnemyType.h                        \\
+    │   │   ├── LightBarFinder.h                   \\
     │   │   ├── NumberClassifier.h
     │   │   └── TargetBumper.h
     │   └── src
