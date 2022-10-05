@@ -42,19 +42,20 @@
 
 ## 文件结构
 
+```txt
 .
-├── auto_start.sh    //自启动脚本    \\
-├── CMakeLists.txt                  \\
-├── README.md                       \\
-└── src                              \\
-    ├── armor_detector                 // 自瞄   \\
-    │   ├── CMakeLists.txt                       \\
-    │   ├── include                              \\
-    │   │   ├── ArmorFinder.h                    \\
-    │   │   ├── DetectAccelerator.h               \\
-    │   │   ├── Detector.h                        \\
-    │   │   ├── EnemyType.h                        \\
-    │   │   ├── LightBarFinder.h                   \\
+├── auto_start.sh    //自启动脚本    
+├── CMakeLists.txt                  
+├── README.md                       
+└── src                              
+    ├── armor_detector                 // 自瞄   
+    │   ├── CMakeLists.txt                       
+    │   ├── include                              
+    │   │   ├── ArmorFinder.h                    
+    │   │   ├── DetectAccelerator.h               
+    │   │   ├── Detector.h                        
+    │   │   ├── EnemyType.h                        
+    │   │   ├── LightBarFinder.h                   
     │   │   ├── NumberClassifier.h
     │   │   └── TargetBumper.h
     │   └── src
@@ -157,7 +158,7 @@
             ├── buff_model.xml                   // 能量机关SVM模型
             ├── init.json                        // 配置文件
             └── svm_numbers.xml                  // 数字分类SVM模型
-
+```
 ## 代码规范
 
 | 规范      | 含义 |示例|
