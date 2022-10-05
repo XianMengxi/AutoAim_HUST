@@ -1,0 +1,10 @@
+package exlcm;
+struct example_t
+{
+    float pose[3];
+    float speed[3];
+    float kf_pose[3];
+    float kf_speed[3];
+    float yaw[2];
+    float pitch[2];
+}

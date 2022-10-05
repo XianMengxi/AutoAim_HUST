@@ -1,0 +1,7 @@
+package exlcm;
+
+struct info
+{
+    double time_stamp[2];
+    float predict_pos[6];
+}

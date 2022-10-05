@@ -1,0 +1,127 @@
+{
+  "camera": {
+    "device_type": 0,
+    "sn": "KE0200060398",
+    "video_path": "../pn.avi",
+    "picture_path": "../src/utils/data/",
+    "camera_param": {
+      "fx": 1324.1,
+      "fy": 1326.6,
+      "u0": 637.22,
+      "v0": 525.9344,
+      "k1": -0.2149,
+      "k2": 0.1717,
+      "p1": 0,
+      "p2": 0,
+      "k3": 0,
+      "exposure_time": 600,
+      "gain": 0,
+      "gamma": 0.55
+    },
+    "auto_exposure_gain": {
+      "is_use_auto_exposure": false,
+      "is_use_auto_gain": false,
+      "auto_exposure_min": 500,
+      "auto_exposure_max": 8000,
+      "auto_gain_min": 5,
+      "auto_gain_max": 13,
+      "target_gray_min": 28,
+      "target_gray_max": 28
+    },
+    "white_balance": {
+      "is_auto_balance": true,
+      "white_balance_ratio_r": 1.4,
+      "white_balance_ratio_b": 1.0,
+      "white_balance_ratio_g": 1
+    },
+    "camera_trans": {
+      "x": 0.00,
+      "y": 0.0812,
+      "z": 0.04866
+    },
+    "shoot_speed": 15.0,
+    "shoot_slow_bias": 2
+  },
+  "serialport": {
+    "enable": 1,
+    "deviceName": "/dev/ttyUSB0"
+  },
+  "thread": {
+    "pic_thread_delay": 0,
+    "serial_thread_delay": 0,
+    "detect_thread_delay": 1800
+  },
+  "detector": {
+    "color": "blue",
+    "thresh": 110,
+    "mode": 1,
+    "shoot_right_offset": 0,
+    "shoot_up_offset": 0,
+    "k": 0.0001,
+    "shoot_up_offsetk": 0,
+    "shoot_delay": 0.09,
+    "shoot_frequency": 2,
+    "is_save_classify": true,
+    "is_shoot": true,
+    "buff_params": {
+      "binary_thresh": 71,
+      "color_thresh": 83,
+      "armor_size_min": 60,
+      "armor_size_max": 150,
+      "armor_father_size_min": 200,
+      "armor_father_size_max": 500,
+      "armor_ratio_min": 1.2,
+      "armor_ratio_max": 3.0,
+      "model_path": "../src/utils/tools/buff_model.xml",
+      "test_mode": 0,
+      "shoot_delay": 0.21,
+      "shoot_frequency": 95,
+      "shoot_up_offset": 350,
+      "shoot_up_offsetk": -80,
+      "shoot_right_offset": 20,
+      "shoot_right_offsetk": 0,
+      "large_buff_params": {
+        "angle_process_noise": 60
+      }
+    },
+    "buff_center_params": {
+      "buff_center_size_min": 40,
+      "buff_center_size_max": 200,
+      "buff_center_radius_max": 20.0,
+      "buff_center_radius_min": 6.0,
+      "buff_rotate_radius_min": 80.0,
+      "buff_rotate_radius_max": 200.0
+    },
+    "armor_detect_params": {
+      "lightbar_angle_min": -20,
+      "lightbar_angle_max": 20,
+      "lightbar_area_min": 30,
+      "lightbar_area_max": 3200,
+      "lightbar_ratio_max": 10,
+      "lightbar_ratio_min": 1.0,
+      "angle_diff_max": 25,
+      "armor_ratio_max": 5.5,
+      "armor_ratio_min": 1.4,
+      "lightbar_center_diff": 90,
+      "rectangle_likely": 0.3,
+      "lightbar_length_ratio": 2,
+      "armor_area_min": 100,
+      "armor_area_max": 80000,
+      "show_thresh": 0,
+      "show_classify": 0,
+      "debug_show": 0,
+      "show_lightbar_info": 0,
+      "show_armor_info": 0
+    },
+    "filter_params": {
+      "measurement_noise_pose_x": 200,
+      "measurement_noise_pose_y": 10,
+      "measurement_noise_pose_z": 1,
+      "process_noise_pose_x": 1,
+      "process_noise_pose_y": 1,
+      "process_noise_pose_z": 1,
+      "stf_beta": 2,
+      "is_use_stf": false
+    }
+  }
+}

@@ -1,0 +1,163 @@
+[
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src -I../src/utils/include -I../src/armor_detector/include -I../src/buff/include -I../src/driver/include -I../src/lcm -I../src/pose_estimate/include -I../src/AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o CMakeFiles/AutoAim.dir/src/AutoAim.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/AutoAim.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/AutoAim.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/Detector.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/Detector.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/Detector.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/LightBarFinder.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/LightBarFinder.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/LightBarFinder.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/ArmorFinder.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/ArmorFinder.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/ArmorFinder.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/TargetBumper.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/TargetBumper.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/TargetBumper.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/NumberClassifier.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/NumberClassifier.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/NumberClassifier.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/armor_detector/./include -I../src/armor_detector/../utils/include -I../src/armor_detector/../driver/include -I../src/armor_detector/../pose_estimate/include -I../src/armor_detector/../buff/include -isystem /usr/local/include/opencv4 -I../src/armor_detector/../lcm -I../src/armor_detector/../AntiRot/include -isystem /usr/include/eigen3 -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/armor_detector/CMakeFiles/armor_detector.dir/src/DetectAccelerator.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/DetectAccelerator.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/armor_detector/src/DetectAccelerator.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/PoseSolver.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/PoseSolver.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/PoseSolver.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/Predictor.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/Predictor.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/Predictor.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/NormalKalman.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/NormalKalman.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/NormalKalman.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/SecondFilter.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/SecondFilter.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/SecondFilter.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/NormalEKF.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/NormalEKF.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/NormalEKF.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/pose_estimate/include -I../src/pose_estimate/../utils/include -I/usr/include/eigen3 -I../src/pose_estimate/../lcm -I../src/pose_estimate/../armor_detector/include -I../src/pose_estimate/../driver/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/pose_estimate/CMakeFiles/pose_estimate.dir/src/PitchYawFilter.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/PitchYawFilter.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/pose_estimate/src/PitchYawFilter.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/driver/include -I../src/driver/../utils/include -I../src/driver/../armor_detector/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/driver/CMakeFiles/driver.dir/src/SerialPort.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/SerialPort.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/SerialPort.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/driver/include -I../src/driver/../utils/include -I../src/driver/../armor_detector/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/driver/CMakeFiles/driver.dir/src/VideoCapture.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/VideoCapture.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/VideoCapture.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/driver/include -I../src/driver/../utils/include -I../src/driver/../armor_detector/include -isystem /usr/local/include/opencv4   -O0 -g   -std=gnu++14 -o src/driver/CMakeFiles/driver.dir/src/GxCamera.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/GxCamera.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/driver/src/GxCamera.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/utils/include -isystem /usr/local/include/opencv4 -I/usr/local/include/glog   -O0 -g   -std=gnu++14 -o src/utils/CMakeFiles/utils.dir/src/Config.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Config.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Config.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/utils/include -isystem /usr/local/include/opencv4 -I/usr/local/include/glog   -O0 -g   -std=gnu++14 -o src/utils/CMakeFiles/utils.dir/src/Log.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Log.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Log.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/utils/include -isystem /usr/local/include/opencv4 -I/usr/local/include/glog   -O0 -g   -std=gnu++14 -o src/utils/CMakeFiles/utils.dir/src/Params.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Params.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Params.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -I../src/utils/include -isystem /usr/local/include/opencv4 -I/usr/local/include/glog   -O0 -g   -std=gnu++14 -o src/utils/CMakeFiles/utils.dir/src/Timer.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Timer.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/utils/src/Timer.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffClassifier.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffClassifier.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffClassifier.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffPredictor.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffPredictor.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffPredictor.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffCurver.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffCurver.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffCurver.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffDetector.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffDetector.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffDetector.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffAngleKalman.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffAngleKalman.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffAngleKalman.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7  -DCERES_EXPORT_INTERNAL_SYMBOLS -DGFLAGS_IS_A_DLL=0 -I../src/buff/include -isystem /usr/include/eigen3 -isystem /usr/local/include/opencv4 -I../src/buff/../utils/include -I../src/buff/../pose_estimate/include -I../src/buff/../lcm -isystem /usr/local/include   -O0 -g   -std=gnu++14 -o src/buff/CMakeFiles/buff.dir/src/buffCompensation.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffCompensation.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/buff/src/buffCompensation.cpp"
+},
+
+{
+  "directory": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7     -O0 -g   -std=gnu++14 -o src/lcm/CMakeFiles/lcm_module.dir/lcm_module.cpp.o -c /home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/lcm/lcm_module.cpp",
+  "file": "/home/zhou/步兵开源/AIM_HUST/AIM_HUST/src/lcm/lcm_module.cpp"
+}
+]
