@@ -1,456 +1,228 @@
-<!DOCTYPE html><html><head>
-      <title>README</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:////home/zhou/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.3/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <style>
-      /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
-
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
-
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
-
-.token.cdata {
-  color: #183691;
-}
-
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
-
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
-
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
-
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
-
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
-
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.token.list {
-  color: #ed6a43;
-}
-
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
-
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
-
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
-
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
-
-code.language-yaml {
-  color: #183691;
-}
-
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
-
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
-
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
-
-.language-makefile .token.variable {
-  color: #183691;
-}
-
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
-
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}
-
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
-
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: hsla(24, 20%, 50%,.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
-
-pre[data-line] .line-highlight:before, 
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%,.4);
-  color: hsl(24, 20%, 95%);
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
-
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="aim_hust-2022">AIM_HUST-2022</h1>
-
-<p>&#x534E;&#x4E2D;&#x79D1;&#x6280;&#x5927;&#x5B66;&#x72FC;&#x7259;&#x6218;&#x961F;2022&#x8D5B;&#x5B63;&#x6B65;&#x5175;&#x81EA;&#x7784;&#x7A0B;&#x5E8F;&#x3002;</p>
-<h2 class="mume-header" id="author%E5%91%A8%E5%80%8D%E8%BF%9B">Author:&#x5468;&#x500D;&#x8FDB;</h2>
-
-<h2 class="mume-header" id="%E7%AE%80%E4%BB%8B">&#x7B80;&#x4ECB;</h2>
-
-<ol>
-<li>&#x786C;&#x4EF6;&#x914D;&#x7F6E;</li>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>README</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  <link href="stylesheets/pandoc.css" rel="stylesheet">
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+<!-- doc title / page header -->
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span4">
+<nav id="TOC" class="sidebar-nav sidebar-nav-fixed">
+<ul>
+<li><a href="#aim_hust-2022">AIM_HUST-2022</a>
+<ul>
+<li><a href="#简介">简介</a></li>
+<li><a href="#环境配置">环境配置</a></li>
+<li><a href="#文件结构">文件结构</a></li>
+<li><a href="#代码规范">代码规范</a></li>
+<li><a href="#设计模式">设计模式</a></li>
+<li><a href="#如何使用">如何使用？</a></li>
+<li><a href="#算法演示">算法演示</a></li>
+<li><a href="#程序框图">程序框图</a></li>
+<li><a href="#优化方向">优化方向</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<div class="span8">
+<h1 id="aim_hust-2022">AIM_HUST-2022</h1>
+<p>华中科技大学狼牙战队2022赛季步兵自瞄程序。</p>
+<h2 id="简介">简介</h2>
+<ol type="1">
+<li>硬件配置</li>
 </ol>
-<p>&#x786C;&#x4EF6;&#x4E0A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x5927;&#x6052;&#x76F8;&#x673A;+5mm&#x7126;&#x8DDD;&#x955C;&#x5934;,miniPC&#x4F7F;&#x7528;&#x7684;&#x662F;NVIDIA Jetson TX2</p>
-<ol start="2">
-<li>&#x529F;&#x80FD;</li>
+<p>硬件上我们使用大恒相机+5mm焦距镜头,miniPC使用的是NVIDIA Jetson TX2</p>
+<ol start="2" type="1">
+<li>功能</li>
 </ol>
 <ul>
-<li>&#x81EA;&#x7784;</li>
-<li>&#x53CD;&#x9640;&#x87BA;</li>
-<li>&#x80FD;&#x91CF;&#x673A;&#x5173;</li>
+<li>自瞄</li>
+<li>反陀螺</li>
+<li>能量机关</li>
 </ul>
-<ol start="3">
-<li>&#x90E8;&#x7F72;&#x9700;&#x8981;&#x8C03;&#x8282;&#x7684;&#x53C2;&#x6570;&#x6709;</li>
+<ol start="3" type="1">
+<li>部署需要调节的参数有</li>
 </ol>
 <ul>
-<li>&#x4F20;&#x7EDF;&#x89C6;&#x89C9;&#x76F8;&#x673A;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x66DD;&#x5149;&#xFF0C;&#x589E;&#x76CA;&#x7B49;</li>
-<li>&#x5927;&#x6052;&#x76F8;&#x673A;ID</li>
-<li>&#x76F8;&#x673A;&#x5185;&#x53C2;&#x6570;</li>
-<li>&#x76F8;&#x673A;&#x955C;&#x5934;&#x5230;&#x67AA;&#x7BA1;&#x7684;&#x5E73;&#x79FB;&#x5411;&#x91CF;</li>
-<li>USE&#x8F6C;&#x4E32;&#x53E3;&#x8BBE;&#x5907;&#x540D;&#x5B57;</li>
-<li>&#x7EBF;&#x7A0B;&#x5EF6;&#x65F6;</li>
-<li>&#x4F20;&#x7EDF;&#x89C6;&#x89C9;&#x8BC6;&#x522B;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x4E8C;&#x503C;&#x5316;&#x9608;&#x503C;,&#x706F;&#x6761;&#x88C5;&#x7532;&#x677F;&#x51E0;&#x4F55;&#x7EA6;&#x675F;&#x53C2;&#x6570;</li>
-<li>&#x76F8;&#x673A;&#x5230;&#x67AA;&#x7BA1;&#x7684;&#x65CB;&#x8F6C;&#x89D2;&#x5EA6;yaw_bias&#x548C;pitch_bias(&#x76F8;&#x673A;&#x5B89;&#x88C5;&#x4E0D;&#x53EF;&#x80FD;&#x5B8C;&#x5168;&#x4E0E;&#x67AA;&#x7BA1;&#x65E0;&#x65CB;&#x8F6C;)</li>
-<li>&#x53D1;&#x5C04;&#x5EF6;&#x8FDF;</li>
-<li>&#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x6D4B;&#x91CF;&#x566A;&#x58F0;&#xFF0C;&#x8FC7;&#x7A0B;&#x566A;&#x58F0;</li>
-<li>&#x5F3A;&#x8DDF;&#x8E2A;&#x6EE4;&#x6CE2;&#x5668;&#x53C2;&#x6570;</li>
+<li>传统视觉相机参数，如曝光，增益等</li>
+<li>大恒相机ID</li>
+<li>相机内参数</li>
+<li>相机镜头到枪管的平移向量</li>
+<li>USE转串口设备名字</li>
+<li>线程延时</li>
+<li>传统视觉识别参数，如二值化阈值,灯条装甲板几何约束参数</li>
+<li>相机到枪管的旋转角度yaw_bias和pitch_bias(相机安装不可能完全与枪管无旋转)</li>
+<li>发射延迟</li>
+<li>卡尔曼滤波参数，如测量噪声，过程噪声</li>
+<li>强跟踪滤波器参数</li>
+<li>卡方检验数</li>
 </ul>
-<h2 class="mume-header" id="%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE">&#x73AF;&#x5883;&#x914D;&#x7F6E;</h2>
-
+<h2 id="环境配置">环境配置</h2>
 <ul>
 <li>Ubuntu 18.04 LTS</li>
 <li>gcc 7.5.0</li>
 <li>OpenCV 4.5.1</li>
-<li>Eigen&#x975E;&#x6A21;&#x677F;&#x7C7B;</li>
+<li>Eigen非模板类</li>
 <li>Ceres</li>
 <li>Sophus</li>
 <li>LCM</li>
 <li>Glog</li>
 <li>Jsoncpp</li>
 </ul>
-<h2 class="mume-header" id="%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84">&#x6587;&#x4EF6;&#x7ED3;&#x6784;</h2>
-
-<p>.<br>
-&#x251C;&#x2500;&#x2500; auto_start.sh    //&#x81EA;&#x542F;&#x52A8;&#x811A;&#x672C;<br>
-&#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x251C;&#x2500;&#x2500; <a href="http://README.md">README.md</a><br>
-&#x2514;&#x2500;&#x2500; src<br>
-&#x251C;&#x2500;&#x2500; armor_detector                 // &#x81EA;&#x7784;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; include<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; ArmorFinder.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; DetectAccelerator.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Detector.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; EnemyType.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; LightBarFinder.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; NumberClassifier.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; TargetBumper.h<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; src<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; ArmorFinder.cpp         // &#x706F;&#x6761;&#x5339;&#x914D;&#x88C5;&#x7532;&#x677F;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; DetectAccelerator.cpp   // ROI&#x63D0;&#x53D6;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; Detector.cpp            // &#x81EA;&#x7784;&#x5B50;&#x7EBF;&#x7A0B;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; LightBarFinder.cpp      // &#x9884;&#x5904;&#x7406; &amp; &#x7B5B;&#x9009;&#x706F;&#x6761;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; NumberClassifier.cpp    // HOG + SVM &#x6570;&#x5B57;&#x5206;&#x7C7B;<br>
-&#x2502;&#xA0;&#xA0;     &#x2514;&#x2500;&#x2500; TargetBumper.cpp        // &#x4F18;&#x5148;&#x7EA7;&#x5224;&#x65AD;<br>
-&#x251C;&#x2500;&#x2500; AutoAim.cpp                     // &#x4E3B;&#x7A0B;&#x5E8F;&#xFF0C;&#x751F;&#x6210;&#x5B50;&#x7EBF;&#x7A0B;<br>
-&#x251C;&#x2500;&#x2500; AutoAim.h<br>
-&#x251C;&#x2500;&#x2500; buff                            // &#x80FD;&#x91CF;&#x673A;&#x5173;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; include<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; AdaptiveEKF.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffAngleKalman.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffArmorNode.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffClassifier.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffCompensation.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffCurver.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffDetector.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffEKF.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; buffKalman.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; buffPredictor.h<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; src<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffAngleKalman.cpp<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffClassifier.cpp          // &#x80FD;&#x91CF;&#x673A;&#x5173;SVM&#x5206;&#x7C7B;&#x5668;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffCompensation.cpp        // &#x80FD;&#x91CF;&#x673A;&#x5173;&#x8865;&#x507F;&#x8BA1;&#x7B97;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffCurver.cpp              // &#x6B63;&#x5F26;&#x66F2;&#x7EBF;&#x62DF;&#x5408;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffDetector.cpp            // &#x80FD;&#x91CF;&#x673A;&#x5173;&#x8BC6;&#x522B;&#x5668;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffEKF.cpp                 // &#x80FD;&#x91CF;&#x673A;&#x5173;EKF&#x89D2;&#x5EA6;&#x6EE4;&#x6CE2;&#xFF0C;&#x5DF2;&#x5F03;&#x7528;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; buffKalman.cpp              // &#x80FD;&#x91CF;&#x673A;&#x5173;KF&#x89D2;&#x5EA6;&#x6EE4;&#x6CE2;&#xFF0C;&#x5DF2;&#x5F03;&#x7528;<br>
-&#x2502;&#xA0;&#xA0;     &#x2514;&#x2500;&#x2500; buffPredictor.cpp           // &#x80FD;&#x91CF;&#x673A;&#x5173;&#x9884;&#x6D4B;&#x5668;<br>
-&#x251C;&#x2500;&#x2500; driver<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; include<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; DxImageProc.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; GxCamera.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; GxIAPI.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; SerialPort.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; VideoCapture.h<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; src<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; GxCamera.cpp                // &#x5927;&#x6052;&#x76F8;&#x673A;&#x8F6F;&#x4EF6;&#x9A71;&#x52A8;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; SerialPort.cpp              // &#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x7EBF;&#x7A0B;<br>
-&#x2502;&#xA0;&#xA0;     &#x2514;&#x2500;&#x2500; VideoCapture.cpp            // &#x91C7;&#x96C6;&#x56FE;&#x50CF;&#x7EBF;&#x7A0B;<br>
-&#x251C;&#x2500;&#x2500; lcm                  // LCM&#x901A;&#x4FE1;&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x4EE5;&#x53D1;&#x9001;&#x4FE1;&#x606F;&#x7ED9;&#x81EA;&#x5DF1;&#x7535;&#x8111;debug&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x5408;QT&#x5C0F;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; example_t.lcm<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; exlcm<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; example_t.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; info.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; lcm_module.cpp<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; lcm_module.h<br>
-&#x251C;&#x2500;&#x2500; pose_estimate        // &#x4F4D;&#x59FF;&#x4F30;&#x8BA1;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; include<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; AdaptiveEKF.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CTModel.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; ExtendedKalman.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; NormalEKF.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; NormalKalman.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; PitchYawFilter.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; PoseSolver.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Predictor.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; SecondFilter.h<br>
-&#x2502;&#xA0;&#xA0; &#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; STF.hpp                        //&#x5F3A;&#x8DDF;&#x8E2A;&#x6EE4;&#x6CE2;&#x5668;&#x6709;&#x5173;&#x6587;&#x4EF6;<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; src<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; CTModel.cpp                   // CT&#x8FD0;&#x52A8;&#x6A21;&#x578B;&#x4F30;&#x8BA1;&#x5C0F;&#x9640;&#x87BA;&#x7684;&#x65CB;&#x8F6C;&#xFF0C;&#x5DF2;&#x5F03;&#x7528;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; NormalEKF.cpp                 // EKF&#x6EE4;&#x6CE2;&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x4F30;&#x8BA1;(&#x53C2;&#x8003;&#x4E0A;&#x4EA4;)<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; NormalKalman.cpp              // CV&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x4F30;&#x8BA1;&#xFF0C;&#x5DF2;&#x88AB;EKF&#x4EE3;&#x66FF;<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; PitchYawFilter.cpp<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; PoseSolver.cpp<br>
-&#x2502;&#xA0;&#xA0;     &#x251C;&#x2500;&#x2500; Predictor.cpp<br>
-&#x2502;&#xA0;&#xA0;     &#x2514;&#x2500;&#x2500; SecondFilter.cpp               // &#x5361;&#x5C14;&#x66FC;&#x6EE4;&#x6CE2;&#x8FDB;&#x884C;&#x4F4E;&#x901A;&#x6EE4;&#x6CE2;<br>
-&#x2514;&#x2500;&#x2500; utils<br>
-&#x251C;&#x2500;&#x2500; CMakeLists.txt<br>
-&#x251C;&#x2500;&#x2500; destroy             // &#x90E8;&#x5206;&#x4EE5;&#x540E;&#x53EF;&#x80FD;&#x6709;&#x53C2;&#x8003;&#x4EF7;&#x503C;&#x7684;&#x5F03;&#x7528;&#x4EE3;&#x7801;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; AdaptiveEKF.hpp<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CAModel.cpp                     // CA&#x8FD0;&#x52A8;&#x6A21;&#x578B;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CAModel.h<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CTModel.cpp                     // CT&#x65CB;&#x8F6C;&#x4F30;&#x8BA1;&#x6A21;&#x578B;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; CTModel.h<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; <a href="http://README.md">README.md</a><br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; SingerExtendedFilter.cpp        // Singer&#x6A21;&#x578B;(EKF)<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; SingerExtendedFilter.h<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; SingerFilter.cpp                // Singer&#x6A21;&#x578B;(KF)<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; SingerFilter.h<br>
-&#x251C;&#x2500;&#x2500; include<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Config.h<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; LockFreeQueue.hpp                // &#x65E0;&#x9501;&#x5FAA;&#x73AF;&#x961F;&#x5217;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Log.h<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Params.h<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; Timer.h<br>
-&#x251C;&#x2500;&#x2500; src<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Config.cpp                       // &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Log.cpp                          // &#x65E5;&#x5FD7;<br>
-&#x2502;&#xA0;&#xA0; &#x251C;&#x2500;&#x2500; Params.cpp                       // &#x53C2;&#x6570;&#x5B9A;&#x4E49;<br>
-&#x2502;&#xA0;&#xA0; &#x2514;&#x2500;&#x2500; Timer.cpp                        // &#x5B9A;&#x65F6;&#x5668;<br>
-&#x2514;&#x2500;&#x2500; tools<br>
-&#x251C;&#x2500;&#x2500; buff_model.xml                   // &#x80FD;&#x91CF;&#x673A;&#x5173;SVM&#x6A21;&#x578B;<br>
-&#x251C;&#x2500;&#x2500; init.json                        // &#x914D;&#x7F6E;&#x6587;&#x4EF6;<br>
-&#x2514;&#x2500;&#x2500; svm_numbers.xml                  // &#x6570;&#x5B57;&#x5206;&#x7C7B;SVM&#x6A21;&#x578B;</p>
-<h2 class="mume-header" id="%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8">&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1F;</h2>
-
-<ol>
+<h2 id="文件结构">文件结构</h2>
+<p>. ├── auto_start.sh //自启动脚本 ├── CMakeLists.txt ├── README.md └── src ├── armor_detector // 自瞄 │   ├── CMakeLists.txt │   ├── include │   │   ├── ArmorFinder.h │   │   ├── DetectAccelerator.h │   │   ├── Detector.h │   │   ├── EnemyType.h │   │   ├── LightBarFinder.h │   │   ├── NumberClassifier.h │   │   └── TargetBumper.h │   └── src │   ├── ArmorFinder.cpp // 灯条匹配装甲板 │   ├── DetectAccelerator.cpp // ROI提取 │   ├── Detector.cpp // 自瞄子线程 │   ├── LightBarFinder.cpp // 预处理 &amp; 筛选灯条 │   ├── NumberClassifier.cpp // HOG + SVM 数字分类 │   └── TargetBumper.cpp // 优先级判断 ├── AutoAim.cpp // 主程序，生成子线程 ├── AutoAim.h ├── buff // 能量机关 │   ├── CMakeLists.txt │   ├── include │   │   ├── AdaptiveEKF.hpp │   │   ├── buffAngleKalman.h │   │   ├── buffArmorNode.h │   │   ├── buffClassifier.h │   │   ├── buffCompensation.h │   │   ├── buffCurver.h │   │   ├── buffDetector.h │   │   ├── buffEKF.h │   │   ├── buffKalman.h │   │   └── buffPredictor.h │   └── src │   ├── buffAngleKalman.cpp │   ├── buffClassifier.cpp // 能量机关SVM分类器 │   ├── buffCompensation.cpp // 能量机关补偿计算 │   ├── buffCurver.cpp // 正弦曲线拟合 │   ├── buffDetector.cpp // 能量机关识别器 │   ├── buffEKF.cpp // 能量机关EKF角度滤波，已弃用 │   ├── buffKalman.cpp // 能量机关KF角度滤波，已弃用 │   └── buffPredictor.cpp // 能量机关预测器 ├── driver │   ├── CMakeLists.txt │   ├── include │   │   ├── DxImageProc.h │   │   ├── GxCamera.h │   │   ├── GxIAPI.h │   │   ├── SerialPort.h │   │   └── VideoCapture.h │   └── src │   ├── GxCamera.cpp // 大恒相机软件驱动 │   ├── SerialPort.cpp // 串口通信线程 │   └── VideoCapture.cpp // 采集图像线程 ├── lcm // LCM通信模块，用以发送信息给自己电脑debug使用，需要配合QT小程序使用 │   ├── CMakeLists.txt │   ├── example_t.lcm │   ├── exlcm │   │   └── example_t.hpp │   ├── info.hpp │   ├── lcm_module.cpp │   └── lcm_module.h ├── pose_estimate // 位姿估计 │   ├── CMakeLists.txt │   ├── include │   │   ├── AdaptiveEKF.hpp │   │   ├── CTModel.h │   │   ├── ExtendedKalman.hpp │   │   ├── NormalEKF.h │   │   ├── NormalKalman.h │   │   ├── PitchYawFilter.h │   │   ├── PoseSolver.h │   │   ├── Predictor.h │   │   ├── SecondFilter.h │   │   └── STF.hpp //强跟踪滤波器有关文件 │   └── src │   ├── CTModel.cpp // CT运动模型估计小陀螺的旋转，已弃用 │   ├── NormalEKF.cpp // EKF滤波进行状态估计(参考上交) │   ├── NormalKalman.cpp // CV模型进行状态估计，已被EKF代替 │   ├── PitchYawFilter.cpp │   ├── PoseSolver.cpp │   ├── Predictor.cpp │   └── SecondFilter.cpp // 卡尔曼滤波进行低通滤波 └── utils ├── CMakeLists.txt ├── destroy // 部分以后可能有参考价值的弃用代码 │   ├── AdaptiveEKF.hpp │   ├── CAModel.cpp // CA运动模型 │   ├── CAModel.h │   ├── CTModel.cpp // CT旋转估计模型 │   ├── CTModel.h │   ├── README.md │   ├── SingerExtendedFilter.cpp // Singer模型(EKF) │   ├── SingerExtendedFilter.h │   ├── SingerFilter.cpp // Singer模型(KF) │   └── SingerFilter.h ├── include │   ├── Config.h │   ├── LockFreeQueue.hpp // 无锁循环队列 │   ├── Log.h │   ├── Params.h │   └── Timer.h ├── src │   ├── Config.cpp // 配置文件读取 │   ├── Log.cpp // 日志 │   ├── Params.cpp // 参数定义 │   └── Timer.cpp // 计时器，用来计算帧率; 或作为计数器，用来分频 └── tools ├── buff_model.xml // 能量机关SVM模型 ├── init.json // 配置文件 └── svm_numbers.xml // 数字分类SVM模型</p>
+<h2 id="代码规范">代码规范</h2>
+<table>
+<thead>
+<tr class="header">
+<th>规范</th>
+<th>含义</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>首字母大写，单词间大写区分</td>
+<td>文件名,类名</td>
+<td>ArmorBlob: 即ArmorBlob类</td>
+</tr>
+<tr class="even">
+<td>首字母小写，单词间大写区分</td>
+<td>函数名</td>
+<td>initHog: 即Hog初始化函数</td>
+</tr>
+<tr class="odd">
+<td>首字母小写，单词以下划线区分</td>
+<td>变量</td>
+<td>lut_table: LUT表格</td>
+</tr>
+<tr class="even">
+<td>全小写，名词为变量，动词为函数</td>
+<td>一些简单变量以及含义明确的函数</td>
+<td>Kalman类的predict: 卡尔曼滤波预测过程</td>
+</tr>
+</tbody>
+</table>
+<h2 id="设计模式">设计模式</h2>
+<p>生产者消费者模式</p>
+<h2 id="如何使用">如何使用？</h2>
+<ol type="1">
 <li></li>
 </ol>
-<pre data-role="codeBlock" data-info class="language-"><code>    sudo vim /etc/rc.local
-</code></pre><ol start="2">
-<li>&#x5C06;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x52A0;&#x5728;&quot;exit 0&quot;&#x4E4B;&#x524D;,&#x7136;&#x540E;&#x4FDD;&#x5B58;&#x9000;&#x51FA;&#x7F16;&#x8F91;</li>
+<pre><code>    sudo vim /etc/rc.local</code></pre>
+<ol start="2" type="1">
+<li>将以下代码加在”exit 0”之前,然后保存退出编辑</li>
 </ol>
-<pre data-role="codeBlock" data-info class="language-"><code>    sh you_dir/auto_start.sh
-</code></pre><ol start="3">
+<pre><code>    sh you_dir/auto_start.sh</code></pre>
+<ol start="3" type="1">
 <li></li>
 </ol>
-<pre data-role="codeBlock" data-info class="language-"><code>    sudo chmod +x /etc/rc.local
+<pre><code>    sudo chmod +x /etc/rc.local</code></pre>
+<h2 id="算法演示">算法演示</h2>
+<h2 id="程序框图">程序框图</h2>
+<p>tips: 需使用mermaid观看流程图</p>
+<pre class="mermaid"><code>graph TB
+    subgraph Diagram
+        subgraph source
+            stm32
+            Camera
+
+            style stm32 fill:#32f
+            style Camera fill:#32f
+        end
+        subgraph queue
+            D1[picture queue]
+            D2[serial data queue]
+
+            style D1 fill:#bbf
+            style D2 fill:#bbf
+        end
+        subgraph thread
+            subgraph detector
+            A(detector start)--&gt;A2[wait for a picture]
+            D1--&gt;A2
+            A2--&gt;A3[wait for a serial data]
+            D2--&gt;A3
+            A3--&gt;A4[image process]
+            A4--&gt;A5[posture estimate]
+            A5--&gt;A6[state estimate]
+            A6--&gt;A7[send data to stm32]
+            A7--&gt;stm32
+            A7--&gt;A8(end a loop)
+            A8--&gt;A2
+            style A fill:#f9f,stroke:#f92,stroke-width:4px
+            style A8 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+            end
+
+            subgraph camera
+            B(camera start)--&gt;B1[wait for image from camera]
+            B1--&gt;B2[send data to queue]
+            B2--&gt;D1
+            B2--&gt;B3(end a loop)
+            style B fill:#f9f,stroke:#f92,stroke-width:4px
+            style B3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+            end
+            subgraph serial
+            C(serial start)--&gt;C1[wait for serial data]
+            C1--&gt;C2[send data to queue]
+            C2--&gt;D2
+            C2--&gt;C3(end a loop)
+            C3--&gt;C1
+            style C fill:#f9f,stroke:#f92,stroke-width:4px
+            style C3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+            end
+        end
+
+
+        stm32--&gt;|send data| C1
+        Camera--&gt;|send picture| B1
+    end
 </code></pre>
-      </div>
-      
-      
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    </body></html>
+<h2 id="优化方向">优化方向</h2>
+<ol type="1">
+<li>更鲁棒的识别性能</li>
+</ol>
+<p>如何应对复杂的灯光一直是赛场上令每个RMer都头疼的问题，当前识别主要有两个思路，一个是传统视觉方向，一个是深度学习方向。传统视觉方向对环境光照依赖较高，但逻辑更为简单，且很多误分类可以通过简单设置约束参数完成。深度学习则对灯光更为鲁棒,但是一旦识别出现问题则很难纠正。</p>
+<p>传统视觉做鲁棒的主要思路是:更加细致的调参以及数字分类模型的完善，细致的调参可以保证在数字分类之前留下更少的候选装甲板，而数字分类模型则应该能适应灯光的变化，降低分类的错误率。</p>
+<hr>
+<!-- disqus begin -->
+<div id="disqus_thread"></div>
+  <script type="text/javascript">
+    var disqus_shortname = 'tzyxpages'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">this is used to edit your name</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">this is used to edit your <span class="logo-disqus">name</span></a>
+</div>
+<!-- disqus end -->
+<!-- google analytics begin -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23745502-8', 'tzengyuxio.me');
+  ga('send', 'pageview');
+
+</script>
+<!-- google analytics end -->
+</div><!--/row-->
+</div><!--/container-->
+</body>
+</html>
